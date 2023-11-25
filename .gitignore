@@ -1,0 +1,15 @@
+/import_test/target/classes/cn/itcast/bean/EnableUserBean.class
+/eureka_server/target/classes/cn/itcast/eureka/EurekaApplication.class
+/order_service/target/classes/cn/itcast/order/OrderApplication.class
+/order_service/target/classes/cn/itcast/order/controller/OrderController.class
+/order_service/target/classes/cn/itcast/order/entity/Product.class
+/product_service/target/classes/cn/itcast/product/entity/Product.class
+/product_service/target/classes/cn/itcast/product/ProductApplication.class
+/product_service/target/classes/cn/itcast/product/controller/ProductController.class
+/product_service/target/classes/cn/itcast/product/dao/ProductDao.class
+/product_service/target/classes/cn/itcast/product/service/ProductService.class
+/product_service/target/classes/cn/itcast/product/service/impl/ProductServiceImpl.class
+/import_test/target/test-classes/cn/itcast/test/TestAppliation.class
+/import_test/target/classes/cn/itcast/bean/User.class
+/import_test/target/classes/cn/itcast/bean/UserConfiguration.class
+/import_test/target/classes/cn/itcast/bean/UserImportSelector.class
