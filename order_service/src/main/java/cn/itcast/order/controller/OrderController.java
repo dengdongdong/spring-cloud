@@ -17,8 +17,8 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 @RequestMapping("/order")
 public class OrderController {
-    @Autowired
-    private RestTemplate restTemplate;
+    // @Autowired
+    // private RestTemplate restTemplate;
 
     /**
      * 注入DiscoveryClient

@@ -24,11 +24,11 @@ public class OrderApplication {
      *
      * @LoadBalanced : 是ribbon提供的负载均的注解
      */
-    @LoadBalanced
-    @Bean
-    public RestTemplate restTemplate() {
-        return new RestTemplate();
-    }
+    // @LoadBalanced
+    // @Bean
+    // public RestTemplate restTemplate() {
+    //     return new RestTemplate();
+    // }
 
     public static void main(String[] args) {
         SpringApplication.run(OrderApplication.class, args);

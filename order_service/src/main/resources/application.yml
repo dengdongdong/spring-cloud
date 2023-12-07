@@ -19,9 +19,6 @@ eureka:
       defaultZone: http://localhost:9000/eureka/,http://localhost:8000/eureka/
     instance:
       prefer-ip-address: ture #使用IP地址注册
-logging:
-  level:
-    root: debug
 
 #修改ribbon的负载均衡策略 服务名-ribbon - NFLoadBalancerRuleClassName:策略
 server-product:
@@ -32,3 +29,21 @@ server-product:
     OkToRetryOnAllOperations: true # 是否对所有操作都进行重试
     MaxAutoRetriesNextServer: 1 # 切换实例的重试次数
     MaxAutoRetries: 1 # 对当前实例的重试次数
+#配置日志输出
+#  日志级别：
+#  NONE【性能最佳，适用于生产】：不记录任何日志（默认值）
+#  BASIC【适用于生产环境追踪问题】：仅记录请求方法、URL、响应状态代码以及执行时间
+#  HEADERS：记录BASIC级别的基础上，记录请求和响应的header。
+#  FULL【比较适用于开发及测试环境定位问题】：记录请求和响应的header、body和元数据。
+feign:
+  client:
+    config:
+      service-product:
+          loggerLevel: FULL
+
+logging:
+  level:
+    cn.itcast.order.feign.ProductFeignClient: debug
+    sql: debug
+
+

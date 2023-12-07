@@ -22,3 +22,7 @@ eureka:
       instance-id: ${spring.cloud.client.id-address}:${server.port} #想注册中心注册服务id
       lease-renewal-interval-in-seconds: 5 #发送心跳的时间间隔；
       lease-expiration-duration-in-seconds: 10 #续约到期的时间
+
+logging:
+  level:
+    sql: debug
